@@ -8,7 +8,6 @@ Este proyecto es un visualizador interactivo para el algoritmo Minimax con poda 
 Antes de ejecutar el programa, asegúrate de tener:
 
 1. **Visual Studio Code (VS Code)**  
-   Puedes descargarlo desde [VS Code](https://code.visualstudio.com/).
 
 2. **Extensión Live Server**  
    Instálala en VS Code siguiendo estos pasos:
