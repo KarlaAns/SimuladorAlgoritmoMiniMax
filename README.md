@@ -30,7 +30,7 @@ Antes de ejecutar el programa, asegúrate de tener:
 1. **Descarga o clona este repositorio**
    - Usa el siguiente comando en la terminal:
      ```bash
-     git clone [<URL_DEL_REPOSITORIO>](https://github.com/KarlaAns/SimuladorAlgoritmoMiniMax)
+     git clone https://github.com/KarlaAns/SimuladorAlgoritmoMiniMax
      ```
    - O descarga el archivo ZIP y extráelo.
 
