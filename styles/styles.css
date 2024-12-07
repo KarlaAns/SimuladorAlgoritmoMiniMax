@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  #tree-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding-bottom:40px;
+  }
+  
+  .node-shape {
+    cursor: pointer;
+    fill: #40E0D0;
+    stroke: #36c6b7;
+    stroke-width: 2px;
+    transition: transform 0.3s;
+  }
+  
+  .node-shape:hover {
+    transform: scale(1.1);
+  }
+  
+  .link {
+    fill: none;
+    stroke: #dcd5d4  ;
+    stroke-width: 2px;
+  }
+  
+  .text {
+    font-size: 14px;
+    fill: #000;
+  }
+
+  .menu {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animación de desvanecimiento y movimiento */
+  }
+  
+  .menu.show {
+    opacity: 1; /* Hace visible el menú */
+    transform: translateY(0); /* Desplaza el menú hacia su posición original */
+    
+  }
+  
+  .menu div {
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  
+  .menu div:hover {
+    background-color: #f0f0f0;
+  }
+
+/* Panel de alfa y beta */
+#alpha-beta-panel {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  #alpha-beta-panel p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Animación de transición para el valor de alfa y beta */
+  .alpha-beta-transition {
+    transition: all 0.5s ease;
+  }
+  
+  /* Cambios visuales para la poda */
+  .poda-node {
+    fill: red !important;
+    stroke: darkred;
+    stroke-width: 3px;
+    opacity: 0.8;
+  }
+  
+  .node {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  button:hover {
+    background-color: #2e7d32;
+  }
